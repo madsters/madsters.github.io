@@ -1,0 +1,24 @@
+@import './constants.css';
+
+.Routes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 50px;
+    padding: 0;
+  }
+
+.Route {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: calc(50px + 2vmin);
+    font-family: var(--font-family);
+    color: var(--celadon);
+    text-decoration: none;
+
+    -webkit-text-stroke-width: 3px;
+}
