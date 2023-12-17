@@ -8,7 +8,7 @@ const Timeline = () => {
             title: "Monash Connect (student services)",
             date: "2021-2024",
             description: "Description of job",
-            imgpath: "..../media/"
+            imgpath: "../../media/mu.png"
         },
         {
             title: "Science for Preschoolers",
