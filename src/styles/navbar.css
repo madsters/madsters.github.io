@@ -7,7 +7,7 @@
     grid-column-gap: 0px;
     grid-row-gap: 50px;
     padding: 0;
-  }
+}
 
 .Route {
     display: flex;
@@ -19,6 +19,13 @@
     font-family: var(--font-family);
     color: var(--celadon);
     text-decoration: none;
-
     -webkit-text-stroke-width: 3px;
+
+    /* Add a smooth transition effect */
+    transition: font-size 0.3s ease; /* Adjust the duration and timing function as needed */
+}
+
+.Route:hover {
+    color: var(--apricot);
+    font-size: calc(48px + 2vmin); /* Adjust the font size when hovering */
 }
