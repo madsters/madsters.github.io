@@ -1,15 +1,16 @@
 @import './constants.css';
 
 .App {
+  text-align: left;
+  margin: 0;
   min-height: 100vh;
-  text-align: center;
   background-color: var(--eggplant);
 }
 
 .App-header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: left;
   font-size: calc(100px + 2vmin);
   font-family: var(--font-family);
   font-weight: bold;
@@ -29,11 +30,14 @@
   padding: 0;
   cursor: pointer;
   color: inherit; /* Use the text color of the parent element */
+
+  transition: color 0.3s ease; 
 }
 
-/* Optional: Add more styles for better visual appearance */
+
 .back-button:hover {
-  /* Add styles for hover effect, if desired */
+  color: var(--apricot);
+  font-size: calc(48px + 2vmin); 
 }
 
 .back-button:focus {
