@@ -14,13 +14,13 @@ const Timeline = () => {
             title: "Science for Preschoolers",
             date: "2020-2021",
             description: "Description of job",
-            imgpath: "..../media/"
+            imgpath: "../../media/"
         },
         {
             title: "Coles Supermarkets",
             date: "2019-2020",
             description: "Description of job",
-            imgpath: "..../media/"
+            imgpath: "../../media/"
         }
     ];
 
@@ -34,6 +34,7 @@ const Timeline = () => {
                         title={experience.title}
                         date={experience.date}
                         description={experience.description}
+                        imgpath={experience.imgpath}
                     />
                 </div>
             ))}
