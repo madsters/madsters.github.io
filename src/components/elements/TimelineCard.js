@@ -5,15 +5,28 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import '../../styles/constants.css';
 
-export default function TimelineCard({ title, description, imgpath }) {
+export default function TimelineCard({ title, description, img }) {
+
+  console.log('img is ' + img);
+
   return (
-    <Card sx={{ display: 'flex', flexDirection: 'row', width: '50%', backgroundColor: 'var(--apricot)' }}>
+    <Card sx={{ display: 'flex', flexDirection: 'row', width: '50%', backgroundColor: 'var(--apricot)', boxSizing: 'border-box' }}>
       <CardMedia
-        sx={{ height: 140, width: 140, objectFit: 'cover' }}
-        image={imgpath}
+        sx={{
+          height: 'calc(140px - 32px)', // 140px - 16px (padding on top) - 16px (padding on bottom)
+          width: 'calc(140px - 32px)', // 140px - 16px (padding on left) - 16px (padding on right)
+          objectFit: 'cover',
+          padding: '16px',
+          borderRadius: '8px',
+          boxSizing: 'border-box',
+          margin: '8px', // Adjust as needed for spacing around the image
+        }}
+        image={img || 'https://via.placeholder.com/140x140'}
         title="Company Logo"
       />
-      <CardContent>
+      <CardContent sx={{
+        padding: '0px'
+      }}>
         <Typography gutterBottom variant="h5" component="div">
           {title}
         </Typography>

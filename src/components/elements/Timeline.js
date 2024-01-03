@@ -1,6 +1,7 @@
 import React from 'react';
 import TimelineCard from './TimelineCard';
 import '../../styles/about.css';
+import mu from '../../media/mu.png';
 
 const Timeline = () => {
     const workExperience = [
@@ -8,19 +9,19 @@ const Timeline = () => {
             title: "Monash Connect (student services)",
             date: "2021-2024",
             description: "Description of job",
-            imgpath: "../../media/mu.png"
+            img: mu
         },
         {
             title: "Science for Preschoolers",
             date: "2020-2021",
             description: "Description of job",
-            imgpath: "../../media/"
+            mg: mu
         },
         {
             title: "Coles Supermarkets",
             date: "2019-2020",
             description: "Description of job",
-            imgpath: "../../media/"
+            mg: mu
         }
     ];
 
@@ -34,7 +35,7 @@ const Timeline = () => {
                         title={experience.title}
                         date={experience.date}
                         description={experience.description}
-                        imgpath={experience.imgpath}
+                        img={experience.img}
                     />
                 </div>
             ))}
