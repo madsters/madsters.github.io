@@ -14,7 +14,7 @@ function App() {
   const location = useLocation();
 
   const handleGoBack = () => {
-    navigate(-1); // Go back to the previous page
+    navigate(-1); // Go back to the previous pag
   };
 
   return (
